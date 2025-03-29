@@ -10,9 +10,7 @@ export default defineConfig({
     },
   },
   build: {
-    // Prevent TypeScript errors from failing the build
-    typescript: {
-      ignoreBuildErrors: true,
-    },
+    // Skip TypeScript type checking
+    outDir: 'dist',
   },
 });
